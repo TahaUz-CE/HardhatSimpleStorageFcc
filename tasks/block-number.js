@@ -1,5 +1,7 @@
 const { task } = require("hardhat/config")
 
+// yarn hardhat node
+
 task("block-number", "Prints the current block number").setAction(
     async (taskArgs, hre) => {
         const blockNumber = await hre.ethers.provider.getBlockNumber()
